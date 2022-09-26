@@ -1,0 +1,140 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+.head{
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    background: linear-gradient(to bottom, linen, salmon);
+}
+
+img{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
+
+h3, h4{
+    line-height: 1.4;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+
+h2{
+    text-align: center;
+    margin: 5px 0;
+}
+h4{
+    text-align: left;
+}
+
+.mr{
+    margin: 20px 0;
+}
+
+.body{
+    margin: 5px 0;
+    padding: 10px;
+    border-radius: 10px;
+    width: 100%;
+    background: linear-gradient(45deg, #ee9ca7, #ffdde1, linen, darkSalmon);
+}
+
+.av, .as{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.crd{
+    border-radius: 10px;
+    padding: 5px;
+    width: 20%;
+    margin: 5px;
+    font-weight: bold;
+    background: linear-gradient(45deg,lightSteelBlue , linen, antiquewhite);
+    transition: 0.5s;
+}
+
+
+
+.as .crd{
+    border: 2px solid black;
+}
+
+.av .crd{
+    border: 2px solid rgb(146, 14, 14);
+}
+
+.ft{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    border-radius: 10px;
+    padding: 10px;
+    background: linear-gradient(to bottom, linen, salmon);
+}
+
+.fa-brands{
+    margin: 0 20px;
+    font-size: 20px;
+    transition: .5s;
+}
+
+.fa-brands:hover, .crd:hover{
+    transform: scale(1.2);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.fa-github, .fa-chrome, .fa-facebook{
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+
+    img{
+        height: 70px;
+        width: 70px;
+    }
+
+    h3{
+        font-size: small;
+        line-height: 1.2;
+    }
+    
+    .crd{
+        width: 47%;
+    }
+
+    .ft{
+        flex-direction: column;
+    }
+
+    p{
+        text-align: center;
+    }
+
+    .icn{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+
+    }
+
+}
